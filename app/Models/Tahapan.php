@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Tahapan extends Model
+{
+    use HasFactory;
+
+    protected $table = 'tahapan_team';
+    protected $fillable = [
+        'id',
+        'team_id',
+        'name',
+        'username',
+        'status',
+        'password'
+    ];
+}
